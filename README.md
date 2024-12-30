@@ -69,13 +69,34 @@ Next, you can link your Turborepo to your Remote Cache by running the following 
 npx turbo link
 ```
 
-## Useful Links
+## Task 6
 
-Learn more about the power of Turborepo:
+Q 6: How can you verify the action has been dispatched?
+Ans: To verify that an action has been dispatched in a React-Redux application,
+     Using Redux DevTools and Redux DevTools is a powerful browser extension that allows you to inspect the Redux store and see all the actions that have been dispatched along with the 
+    state changes. After dispatching an action, you can view the action and the resulting state update in the DevTools panel.
+    
+Q 7: Explain the use of useEffect hook in React?
+Ans: The useEffect hook in React is used to perform side effects in functional components. It allows you to run code after the component has rendered, such as fetching data, updating the 
+     DOM, or subscribing to external events. It can be thought of as the replacement for lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount in class 
+     components.
 
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+Q 8: What is a High Order Component (HOC)?
+Ans:  A Higher-Order Component (HOC) is a function that takes a component and returns a new component with additional props or behavior. HOCs are used for code reuse and composition.
+
+Q 9: What use cases would a HOC be useful?
+Ans:  HOCs are useful for Code reuse Encapsulate common logic or behavior across multiple components (e.g., authentication, logging, data fetching).
+Modifying props You can inject additional props into a component, such as user data or configuration settings.
+Conditional rendering Wrap a component to conditionally render based on certain conditions (e.g., loading states, access control).
+Enhancing component functionality Adding lifecycle methods or managing state for a component.
+
+Q 10: What does it indicate when a component is prefixed with use?
+Ans: When a component or function is prefixed with use, it generally indicates that it is a custom hook. React's hooks, such as useState or useEffect, are used to manage state and side effects in functional components. By convention, custom hooks also start with use to signify that they follow React's hook rules, such as using only inside functional components and not being called conditionally.
+
+Q 11: What is a Generic type in TypeScript?
+Ans: A Generic type in TypeScript allows you to write flexible, reusable code by creating types that can work with multiple types of data. Instead of specifying a particular type, generics let you define a placeholder for a type that will be determined later. It helps in creating components, functions, or classes that can handle different types without losing type safety.
+
+Q 12: What's the difference between a controlled and uncontrolled input in React?
+Ans: Controlled input: In a controlled component, the input's value is controlled by the state in React. The value of the input is set by the state, and any changes to the input are updated in the state via event handlers.
+
+Uncontrolled input: In an uncontrolled component, the input's value is not controlled by React. Instead, you use a ref to access the DOM element directly, and the input value is managed by the DOM itself.
